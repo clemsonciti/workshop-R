@@ -29,13 +29,13 @@ FIXME
 > ## This is challange
 > Is this a question
 >
->> ## Solution
->> Is this a question
->> # include <stdio.h>
->> int main(int arcg, char* arv[]){
->>  printf("Hello workd:");
->>  return 0;
->>}
+> > ## Solution
+> > Is this a question
+> > # include <stdio.h>
+> > int main(int arcg, char* arv[]){
+> >  printf("Hello workd:");
+> >  return 0;
+> > }
 
 {% include links.md %}
 > {: .language-c}
