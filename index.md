@@ -5,15 +5,15 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 ---
 
 > ## Instructor
-> - **Instructor**: Clemson Tigers
-> - **Office**: the Death Valley
-> - **Office Hours**: 24/7
-> - **Email**: tigers AT clemson DOT edu
+> - **Instructor**: Tue Vu
+> - **Office**: 2119 Barre Hall, Clemson University
+> - **Office Hours**: Wed 8.30-11.30 Zoom
+> - **Email**: tuev@clemson.edu
 > - **Phone**: 123 456 7890
 {: .prereq}
 
 > ## Workshop Description
-> Course description goes here
+> This workshop give you the basic programming in R
 >
 {: .prereq}
 
