@@ -1,11 +1,11 @@
-# FIXME Lesson title
+# Programming with R
 
 This repository generates the corresponding course website based on the original templates
 from [The Carpentries](https://carpentries.org/).
 
 ## Maintainer(s)
 
-* Linh B. Ngo
+* Tue M Vu
 
 ## Authors
 
