@@ -17,12 +17,15 @@ FIXME
 
 > ## This is second slide
 >
+> ~~~
 > > # include <stdio.h>
 > > int main(int arcg, char* arv[]){
 > >  printf("Hello workd:");
 > >  return 0;
 > > }
-> {: .language-bash}
+> ~~~
+
+> {: .language-c}
 >
 {: .slide}
 
