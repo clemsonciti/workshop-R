@@ -38,7 +38,7 @@ FIXME
 >>}
 
 {% include links.md %}
->}{:.language.bash}
+> {: .language-c}
 >
 {: .slide}
 
