@@ -37,8 +37,9 @@ FIXME
 > >  return 0;
 > > }
 
+
 {% include links.md %}
-> {: .language-c}
+> {: .language-r}
 >
 {: .slide}
 
