@@ -22,7 +22,7 @@ FIXME
 > >  printf("Hello workd:");
 > >  return 0;
 > > }
-> {:.language-bash}
+> {: .language-bash}
 >
 {: .slide}
 
