@@ -24,3 +24,19 @@ keypoints:
 ```{r}
 > rm(list=ls())
 ```
+## Using R as calculator
+When using R as a calculator, the order of operations is the same as you
+would have learned back in school.
+
+From highest to lowest precedence:
+
+ * Parentheses: `(`, `)`
+ * Exponents: `^` or `**`
+ * Multiply: `*`
+ * Divide: `/`
+ * Add: `+`
+ * Subtract: `-`
+ * Other math functions: `sin, cos, log1(), log10(), exp`
+ ```{r}
+> a <- (1+2)*3-4^5
+```
