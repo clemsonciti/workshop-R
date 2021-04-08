@@ -39,4 +39,36 @@ system.time(Sys.sleep(20))
 user: time charged to the CPU for this expr elapsed: "wall clock" time
 
 ## Profiler
-`system.time()` allows to test certain functions or code blocks In order to know all functions, Profiler is used `Rprof()` function
+- `system.time()` allows to test certain functions or code blocks.
+- The profiler is a tool for helping you to understand how R spends its time. It provides a interactive graphical interface for visualizing data from Rprof, R’s built-in tool for collecting profiling data and, profvis, a tool for visualizing profiles from R. In this document, we’ll understand how to profile code using the profiler and walk through a couple examples to help diagnose and fix performance problems.
+- Here’s an example of the profiler in use. We’ll create a scatter plot of the diamonds data set, which has about 54,000 rows, fit a linear model, and draw a line for the model. If you copy and paste this code into your R console, it’ll open the same profiler interface that you see in this document.
+
+### Using profvis() tool
+```r
+#You need to install profvis, ggplot2 if not installed
+library(profvis)
+profvis({
+  data(diamonds, package = "ggplot2")
+
+  plot(price ~ carat, data = diamonds)
+  m <- lm(price ~ carat, data = diamonds)
+  abline(m, col = "red")
+})
+```
+![image](https://user-images.githubusercontent.com/43855029/114084019-b500e200-987d-11eb-9014-7d7b671bf800.png)
+
+### Alternatively user can select the chunk of code and Select Profile\Profile Selected Line(s)
+![image](https://user-images.githubusercontent.com/43855029/114085356-458bf200-987f-11eb-9275-a1cea7d8c528.png)
+
+### Using Rprof()
+```r
+Rprof() # Turn on the profiler
+data(diamonds, package = "ggplot2")
+
+plot(price ~ carat, data = diamonds)
+m <- lm(price ~ carat, data = diamonds)
+abline(m, col = "red")
+Rprof(NULL) # Turn off the profiler
+summaryRprof()
+```
+
