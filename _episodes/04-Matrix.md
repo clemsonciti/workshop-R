@@ -53,6 +53,17 @@ as.logical(str)
 as.character(str)
 ```
 
+## Vectors Operation
+
+```r
+a <- 3:7
+b <- 20:24
+a+b
+a>b
+a>5
+a*b
+a/b
+```
 
 ## Matrices
 Matrics are vectors with dimension attribute. The dimension attribute is itself an integer vector of length 2 `(nrow, ncol)`
@@ -90,6 +101,17 @@ dim(m2) <- c(3,4)
 m2
 cbind(m,m2)
 rbind(m,m2)
+```
+
+## Matrices Operation
+```r
+m1 <- matrix(1:9,nrow=3,ncol=3)
+m2 <- matrix(rep(10,9),3,3)
+m1
+m2
+m1+m2
+m1*m2
+m1 %*% m2
 ```
 
 ## Factors
