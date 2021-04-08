@@ -22,7 +22,7 @@ keypoints:
 - The `#` is for comment insert.
 - To clean the existing environment, remove all memory in previous sessions:
 
-```{r}
+```r
 > rm(list=ls())
 ```
 
