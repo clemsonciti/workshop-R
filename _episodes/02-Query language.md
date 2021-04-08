@@ -14,7 +14,7 @@ keypoints:
 - "Use `<-` to assign values to variables."
 - "Use `ls()` to list the variables in a program."
 - "Use `rm()` to delete objects in a program."
-- "Use `install.packages()` to install packages (libraries)."
+- "Use `sessionInfo()` to get detail of the current loaded environmemt and packages"
 ---
 
 ## Input to R
@@ -102,6 +102,7 @@ In order to look for help files for function:
 > help(rnorm)
 ```
 The help section will display:
+
 ![image](https://user-images.githubusercontent.com/43855029/114055446-c981b200-985e-11eb-8207-1347edd1f62f.png)
 
 
