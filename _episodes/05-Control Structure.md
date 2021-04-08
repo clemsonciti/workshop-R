@@ -116,7 +116,7 @@ for (i in seq(1,5)) print(letters[i])
 ## While Loop
 Syntax
 ```r
-while(this condition is true){
+while (this condition is true){
   do a thing
 }
 ```
@@ -124,7 +124,7 @@ while(this condition is true){
 Example:
 ```r
 a <- 1
-while(a<5){
+while (a<5){
   print(a)
   a <- a+1
 }
