@@ -2,7 +2,7 @@
 title: Setup
 ---
 
-### For Window and MacOS users:
+# For Window and MacOS users:
 
 Users need to download the RStudio Desktop (Free version) here:
 {https://www.rstudio.com/products/rstudio/}
