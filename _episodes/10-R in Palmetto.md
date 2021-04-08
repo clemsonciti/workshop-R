@@ -18,11 +18,20 @@ Login to your Palmetto account [Palmetto login](https://www.palmetto.clemson.edu
 $ qsub -I -l select=1:ncpus=4:mem=32gb:interconnect=fdr,walltime=72:00:00
 ```
 
-Load R module
+- Load R module
+```bash
 $ module load r/3.6.0-gcc/8.3.1
-Open R and run in Interactive mode:
+```
+
+- Open R and run in Interactive mode to install package
+```bash
 $ R
 > install.packages("doParallel")
-Run R in batch mode
+```
+
+- Run R in batch mode
+```bash
 $ Rscript a.R
 $ R CMD BATCH a.R # Will write separate output file
+```
+
