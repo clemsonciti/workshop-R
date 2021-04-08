@@ -21,27 +21,27 @@ Syntax:
 **if**
 ```r
 if (condition){
-  #do task
+  do task
 }
 ```
 
 **if...else**
 ```r
 if (condition1){
-  #do task 1
+  do task 1
 } else {
-  #do the rest
+  do the rest
 }
 ```
 
 **if...elseif...else**
 ```r
 if (condition1){
-  #do task 1
+  do task 1
 } else if (condition2) {
-  #do task 2
+  do task 2
 } else {
-  #do the rest
+  do the rest
 }
 ```
 
@@ -81,4 +81,52 @@ if (a>3){
 a <- 5
 ifelse(a>3,"a is bigger than 3","a is not bigger than 3")
 ```
+
+## For Loop
+Full Syntax:
+
+```r
+for (iterator in sequence){
+  do task
+}
 ```
+
+Example:
+```r
+for (i in 1:5){
+  print(i)
+}
+```
+
+```r
+for (i in seq(1,5)){
+  print(i)
+}
+```
+
+Short Syntax
+```r
+for (i in 1:5) print(i)
+```
+
+```r
+for (i in seq(1,5)) print(letters[i])
+```
+
+## While Loop
+Syntax
+```r
+while(this condition is true){
+  do a thing
+}
+```
+
+Example:
+```r
+a <- 1
+while(a<5){
+  print(a)
+  a <- a+1
+}
+```
+
