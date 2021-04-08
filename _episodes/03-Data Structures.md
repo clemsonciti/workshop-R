@@ -6,6 +6,7 @@ questions:
 - "Class of objects in R?"
 - "Data Type in R?"
 - "How many type of number in R?"
+- "Missing values"
 - "Vector in R"
 objectives:
 - "Identify 5 class of objects"
