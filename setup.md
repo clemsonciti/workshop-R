@@ -24,7 +24,8 @@ Move the cursor to the line of code (or select the whole chunk of code)
 Click on `Source` button: ![image](https://user-images.githubusercontent.com/43855029/114043237-1c09a100-9854-11eb-938c-1fc987ae0c96.png)
 
 ### To install additional package from CRAN or files:
-- Click on `Tools\Install Packages`
+- Click on `Tools\Install Packages`:
+
 ![image](https://user-images.githubusercontent.com/43855029/114043981-c5509700-9854-11eb-94db-4d10466e3b2e.png)
 
 Or to install package in Command line (mostly for Linux environment, i.e. Palmetto)
