@@ -97,3 +97,25 @@ m <- c("John","Mary","John","John","Jeff","Mary")
 factor(m)
 table(m)
 ```
+
+## Data Frames
+**Data frame is used to store tabular data, a table or 2-D array structure in which:**
+- Each column contains values of one variable and
+- Each row containts one set of value from each column
+
+**Data Frame characteristics:**
+- Column name should not be empty
+- Row name should be unique
+- Data can be numeric, integer, character, factor
+-- Each column contains same number of data items
+
+```r
+df <- data.frame(data=sample(12),title=LETTERS[sample(12)])
+dim(df)
+head(df)
+names(df)
+nrow(df)
+ncol(df)
+```
+
+There are many available data frame in R, for example [`iris`](https://archive.ics.uci.edu/ml/datasets/iris) data set:
