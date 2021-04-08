@@ -9,11 +9,13 @@ questions:
 objectives:
 - "R built-in function"
 keypoints:
-- "variables are initialized by setting them to a value, no need to declare variables"
-- "manuals (accessed through help and lookfor commands) are very helpful"
-- "use `<-` and `=` to assign a value, and '==' to compare"
+- "Use RStudio to write and run R programs."
+- "R has the usual arithmetic operators and mathematical functions."
+- "Use `<-` to assign values to variables."
+- "Use `ls()` to list the variables in a program."
+- "Use `rm()` to delete objects in a program."
+- "Use `install.packages()` to install packages (libraries)."
 ---
-
 
 > ## Input to R
 > In R console, the symbol `>` stands for `promt`
@@ -22,30 +24,3 @@ The `#` is for commenting.
 To clean the existing environment, remove all memory in previous sessions
 > {: .language-r}
 rm(list=ls())
-
-> ## This is second slide
->
-> ~~~
-> > # include <stdio.h>
-> > int main(int arcg, char* arv[]){
-> >  printf("Hello workd:");
-> >  return 0;
-> > }
-> ~~~
-
-> {: .language-c}
->
-{: .slide}
-
-> ## This is challange
-> Is this a question
->
-> > ## Solution
-> > Is this a question
-> > # include <stdio.h>
-> > int main(int arcg, char* arv[]){
-> >  printf("Hello workd:");
-> >  return 0;
-> > }
-
-
