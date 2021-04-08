@@ -37,6 +37,6 @@ From highest to lowest precedence:
  * Add: `+`
  * Subtract: `-`
  * Other math functions: `sin, cos, log1(), log10(), exp`
- ```{r}
+ ```{r, eval=TRUE}
 > a <- (1+2)*3-4^5
 ```
