@@ -6,10 +6,12 @@ questions:
 - "Vector in R"
 - "How to define matrix in R?"
 - "How to manipulate a data frame in R?"
+- "How to read text/csv file"
 objectives:
 - "Working with Matrix"
 - "Create data frame"
 - "Import and export data frame"
+- "Working with text/csv files"
 keypoints:
 - "Working with csv input data"
 ---
