@@ -51,3 +51,10 @@ cbind(m,m2)
 rbind(m,m2)
 ```
 
+## Factors
+Factors are used to represent categorical data
+```r
+m <- c("John","Mary","John","John","Jeff","Mary")
+factor(m)
+table(m)
+```
