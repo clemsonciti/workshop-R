@@ -23,14 +23,12 @@ In R, there are 5 main classes of objects:
 * complex: 2+3i #consists of real and imaginary number
 * logical: TRUE/FALSE
 
-Typical object is a vector, that can be defined using function `c()`
-
 ```r
-> str <- c("a","b","c")
+> str <- "string"
 > class(str)
-> a <- rnorm(5)
+> a <- 5
 > class(a)
-> b <- 4:7
+> b <- 4L
 > class(b)
 > c <- 6i ^ (-3:3)
 > class(c)
@@ -68,4 +66,40 @@ h <- 0/0
 i <- NA
 h
 i
+```
+## Vector
+Typical object is a vector, that can be defined using function `c()` #c stands for combine
+
+```r
+str <- c("a","b","c")
+a   <- c(4,5.6,20)
+b   <- c("TRUE","FALSE")
+```
+
+A vector having different objects: `coercion`
+```r
+str1 <- c("a","b","c",5, 4.5)
+str1
+class(str1)
+b1<- c(5, FALSE)
+b1
+class(b1)
+```
+
+## Explicit Coercion
+Convert objects from one class to another, using `as.` function:
+```r
+a <- 0:5
+class(a)
+as.numeric(a)
+as.logical(a)
+as.character(a)
+```
+How about Nonsensical Coercion?
+```r
+str <- c("a","b","c")
+class(str)
+as.numeric(str)
+as.logical(str)
+as.character(str)
 ```
