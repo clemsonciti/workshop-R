@@ -25,7 +25,7 @@ if (condition){
 }
 ```
 
-**if...else
+**if...else**
 ```r
 if (condition1){
   #do task 1
@@ -34,7 +34,7 @@ if (condition1){
 }
 ```
 
-**if...elseif...else
+**if...elseif...else**
 ```r
 if (condition1){
   #do task 1
