@@ -1,13 +1,17 @@
 ---
-title: "Query Language"
-teaching: 0
+title: "Basic of R"
+teaching: 5
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "how to initialize a variable"
+- "how to do basic arithmetics"
+- "how to get help"
 objectives:
-- "First learning objective. (FIXME)"
+- "R built-in function"
 keypoints:
-- "Key here"
+- "variables are initialized by setting them to a value, no need to declare variables"
+- "manuals (accessed through help and lookfor commands) are very helpful"
+- "use `<-` and `=` to assign a value, and '==' to compare"
 ---
 FIXME
 
