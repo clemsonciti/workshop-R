@@ -24,16 +24,16 @@ In R, there are 5 main classes of objects:
 * logical: TRUE/FALSE
 
 ```r
-> str <- "string"
-> class(str)
-> a <- 5
-> class(a)
-> b <- 4L
-> class(b)
-> c <- 6i ^ (-3:3)
-> class(c)
-> d <- 1:10 < 5
-> class(d)
+str <- "string"
+class(str)
+a <- 5
+class(a)
+b <- 4L
+class(b)
+c <- 6i ^ (-3:3)
+class(c)
+d <- 1:10 < 5
+class(d)
 ```
 
 ## List
