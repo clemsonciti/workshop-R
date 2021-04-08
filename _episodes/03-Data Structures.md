@@ -7,12 +7,15 @@ questions:
 - "Data Type in R?"
 - "How many type of number in R?"
 - "Missing values"
+- "Subsetting"
 objectives:
 - "Identify 5 class of objects"
 - "Working with List"
 - "Type of number in R"
+- "Replace number with subset"
 keypoints:
-- "Read csv input"
+- "Class of objects"
+- "Subsetting" 
 ---
 
 ## Classes of objects
@@ -81,5 +84,54 @@ is.na(v)
 is.nan(v)
 is.infinite(v)
 ```
+
+## Subsetting
+
+In order to extract the necessary information, subsetting is used.
+In R, subsetting is represented by bracket: `[]`
+
+```r
+str <- c("a", "b","c","d")
+str
+# Find the subset with index 1 for str:
+str[1]
+# Find the subset with index 2:4 for str:
+str[2:4]
+```
+
+** Subsetting with List**
+```r
+list1 <- list(l1=str,l2=4:6)
+list1
+# Use $ to call a variable name
+list1$l1[3]
+```
+
+**Subsetting matrix**
+```r
+m <- matrix(1:12,nrow=3,ncol=4)
+m
+m[2,3]
+```
+Subsetting by row or column:
+```r
+m[2,]
+m[,4]
+```
+
+** Subsetting `NA/NaN` value
+```r
+a <- c(1:5,NaN,TRUE)
+a
+# Find the location of *NaN* value using `is.nan()` function
+ind <- is.nan(a)
+ind
+# Subset with location of *NaN* value
+a[ind]
+a[is.nan(a)]
+# Subset with location of `Not NaN` values using `!`
+a[!ind]
+```
+
 
 
