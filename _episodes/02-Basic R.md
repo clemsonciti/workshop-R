@@ -100,6 +100,7 @@ In order to look for help files for function:
 ```r
 ?rnorm
 help(rnorm)
+str(rnorm)
 ```
 The help section will display:
 
