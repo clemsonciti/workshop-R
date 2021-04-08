@@ -48,4 +48,10 @@ From highest to lowest precedence:
 ## Compare in R
 * `==`: equality
 * `!=`: inequality 
+* `<`& `<=`: less than & less than or equal to
+* `>`& `>=`: more than & more than or equal to
 
+~~~
+> 1==1
+~~~
+{: .r}
