@@ -3,6 +3,7 @@ title: "Matrices & Data Frame"
 teaching: 20
 exercises: 0
 questions:
+- "Vector in R"
 - "How to define matrix in R?"
 - "How to manipulate a data frame in R?"
 objectives:
@@ -12,6 +13,7 @@ objectives:
 keypoints:
 - "Working with csv input data"
 ---
+
 
 ## Matrices
 Matrics are vectors with dimension attribute. The dimension attribute is itself an integer vector of length 2 `(nrow, ncol)`
