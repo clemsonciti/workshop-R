@@ -71,6 +71,28 @@ h
 i
 ```
 
+## Random Number & seed
+Create random numeric numbers using runif
+```r
+runif(1)
+runif(3)
+runif(2,10,20)
+```
+
+Create random integer numbers using sample
+```r
+sample(12,5)
+sample(12)
+sample(letters,4)
+```
+
+Introduction to `seed`
+Set the seed of R's random number generator, which is useful for creating simulations or random objects that can be reproduced.
+```r
+set.seed(1234)
+runif(3)
+```
+
 ## Missing values
 In order to test the missing values or bad values NaN, NA, Inf use some math operations:
 * is.na() test NA value
