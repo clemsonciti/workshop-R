@@ -2,13 +2,12 @@
 title: "Introduction to R"
 teaching: 5 min
 exercises: 0
-questions:
-- "What is R?"
+questions: "What is R?"
 objectives:
 - "Basic Introductory of R"
 - "Why using R"
 keypoints:
-- "Advantage of using R
+- "Advantage of using R"
 ---
 - R is a language and environment for statistical computing and graphics.
 - R is similar to the S language 
