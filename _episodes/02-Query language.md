@@ -37,13 +37,15 @@ From highest to lowest precedence:
  * Add: `+`
  * Subtract: `-`
  * Other math functions: `sin, cos, log1(), log10(), exp`
+
 ~~~
 > a <- (1+2)*3-4^5
+> b <- sin(1)+log10(20)*exp(2)
 ~~~
 {: .r}
-~~~
-x = 5
-~~~
-{: .matlab}
 
+
+## Compare in R
+* `==`: equality
+* `!=`: inequality 
 
