@@ -137,7 +137,7 @@ names(iris)[4] <- "new_name"
 ## Reading and Writing Tables
 
 **Reading Table**
-Most popular syntax for reading table in R
+Most popular syntax for reading table in R. Data can be read online by providing the link or read offline from the working directory
 
 - `read.table`: read table in text format
 - `read.csv`: read table in csv format
@@ -152,3 +152,11 @@ Similarly there are syntax for writing table:
 - `write.csv`: write table in csv format
 - `write.xlsx`: write table in excel format (require xlsx packages)
 - `writeLines`: write lines of a text file
+
+In this example, I perform reading [online spatial data](https://support.spatialkey.com/spatialkey-sample-csv-data/) and save part of the output:
+```r
+saledata <- read.csv('https://support.spatialkey.com/wp-content/uploads/2021/02/Sacramentorealestatetransactions.csv')
+dim(saledata)
+names(saledata)
+write.csv(saledata,'SaleData.csv')
+```
