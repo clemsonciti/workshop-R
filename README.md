@@ -1,4 +1,4 @@
-# Programming with R
+# Programming with R: Basic & Advanced
 
 This repository generates the corresponding course website based on the original templates
 from [The Carpentries](https://carpentries.org/).
@@ -9,4 +9,10 @@ from [The Carpentries](https://carpentries.org/).
 
 ## Authors
 
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
+Tue M. Vu, Ph.D. 
+HPC Research Facilitator,
+Advanced Computing and Data Science,
+CyberInfrastructure and Technology Integration (CCIT/CITI)
+Research Assistant Professor, Glenn Department of Civil Engineering
+2119 Barre Hall, Clemson University
+
