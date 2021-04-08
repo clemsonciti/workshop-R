@@ -49,3 +49,4 @@ lapply(list1,mean)
 sapply(list1,mean)
 ```
 
+
