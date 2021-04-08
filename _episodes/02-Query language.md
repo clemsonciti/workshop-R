@@ -18,9 +18,9 @@ keypoints:
 ---
 
 ## Input to R
-In R console, the symbol `>` stands for `R prompt`.
-The `#` is for comment insert.
-To clean the existing environment, remove all memory in previous sessions:
+- In R console, the symbol `>` stands for `R prompt`.
+- The `#` is for comment insert.
+- To clean the existing environment, remove all memory in previous sessions:
 ```{r}
 > rm(list=ls())
 ```
