@@ -68,13 +68,32 @@ Addtwo <- function(a,b){
 }
 Addtwo(1,2)
 ```
+## Return specific value from function
+Syntax:
+```r
+f <- function(args){
+  f1 <- do function with args
+  return(f1)
+}
+```
+For example:
+```r
+# Function to convert oF to oC
+F2C <- function(temp){
+   c <- ((temp - 32) * (5 / 9))
+   return(c)
+}
+F2C(100)
+```
 
-## Return value(s) from function
+## Return list of (more) values from function
 Syntax:
 ```r
 f <- function(args){
   do function with args
-  output <- list(out1=out1,out2=out2,out3=out3)
+  out1 <- do1
+  out2 <- do2  
+  output <- list(out1=out1,out2=out2)
 }
 ```
 
@@ -106,5 +125,17 @@ mean(ind2)
 All the 3 steps can be nested into one command line for experience user:
 ```r
 mean(mtcars$mpg[mtcars$cyl==4])
+```
+
+## Defensive programming with `stopifnot()` function
+Defensive programming encourages us to frequently check conditions and throw an error if something is wrong. 
+For example:
+```r
+F2C <- function(temp){
+   stopifnot(!is.numeric(temp))
+   c <- ((temp - 32) * (5 / 9))
+   return(c)
+}
+F2C(100a)
 ```
 
