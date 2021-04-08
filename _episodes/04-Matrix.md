@@ -107,7 +107,7 @@ table(m)
 - Column name should not be empty
 - Row name should be unique
 - Data can be numeric, integer, character, factor
--- Each column contains same number of data items
+- Each column contains same number of data items
 
 ```r
 df <- data.frame(data=sample(12),title=LETTERS[sample(12)])
@@ -117,5 +117,38 @@ names(df)
 nrow(df)
 ncol(df)
 ```
-
 There are many available data frame in R, for example [`iris`](https://archive.ics.uci.edu/ml/datasets/iris) data set:
+```r
+data(iris)
+```
+
+## Names of Objects in Data Frames
+Using `name()` function:
+```r
+names(iris)
+# Change name
+names(iris) <- c("a", "b", "c","d","e")
+head(iris)
+
+#Change name for particular columns:
+names(iris)[4] <- "new_name"
+```
+
+## Reading and Writing Tables
+
+**Reading Table**
+Most popular syntax for reading table in R
+
+- `read.table`: read table in text format
+- `read.csv`: read table in csv format
+- `read.xlsx`: read table in excel format (require xlsx packages)
+- `readLines`: read lines of a text file
+- `source`: read R code
+
+**Writing Table**
+Similarly there are syntax for writing table:
+
+- `write.table`: write table in text format
+- `write.csv`: write table in csv format
+- `write.xlsx`: write table in excel format (require xlsx packages)
+- `writeLines`: write lines of a text file
