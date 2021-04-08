@@ -13,10 +13,10 @@ keypoints:
 - "manuals (accessed through help and lookfor commands) are very helpful"
 - "use `<-` and `=` to assign a value, and '==' to compare"
 ---
-FIXME
 
-> ## THis is a slide
-> some contents
+
+> ## Input to R
+> In R console, the symbol `>` stands for `promt`
 {: .slide}
 
 > ## This is second slide
