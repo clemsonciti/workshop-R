@@ -17,9 +17,10 @@ keypoints:
 - "Use `install.packages()` to install packages (libraries)."
 ---
 
-> ## Input to R
-> In R console, the symbol `>` stands for `promt`
-> The `#` is for commenting.
-> To clean the existing environment, remove all memory in previous sessions
-> {: .language-r}
+## Input to R
+In R console, the symbol `>` stands for `R prompt`
+The `#` is for comment insert
+To clean the existing environment, remove all memory in previous sessions
+```{r}
 > rm(list=ls())
+```
