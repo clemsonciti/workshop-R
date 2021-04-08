@@ -48,25 +48,20 @@ list1
 
 ## Number
 * In R, the number is considered as numeric
-
 ```r
 e <- 5
 class(e)
 ```
-
 * To get an integer, insert `L` as suffix
-
 ```r
 f <- 5L
 class(f)
 ```
-
 * Special number: `Inf`: infinity
 ```r
 g<-5/0
 class(g)
 ```
-
 * `NaN` (Not a Number) or `NA` (Not Applicable) are undefined values and sometimes refered as missing values:
 ```r
 h <- 0/0
