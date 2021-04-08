@@ -16,8 +16,8 @@ keypoints:
 - R provides a wide variety of statistical (linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. 
 - R is available as Free Software 
 - R runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.
-- R can be extended (easily) via packages
-- R is within top of Data Science language
+- R can be extended (easily) via packages on CRAN (The Comprehensive R Archive Network)
+- R is within top of Data Science language and has many statistical packages available on CRAN
 
 ![image](https://user-images.githubusercontent.com/43855029/114046192-a3f0aa80-9856-11eb-9646-995a67c144f9.png)
 
