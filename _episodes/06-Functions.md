@@ -18,7 +18,23 @@ objectives:
 
 A function is a set of scripts organized together to carry out a specific task. Writing efficient functions is an important skill that can significantly improve the productivity of data scientists and data science solutions. In this guide, you will learn the basics of writing a function and the types of functions, which will enable you perform analytical tasks more efficiently.
 
-## Define a function with 1 arg(ument)
+## Using custom functions
+
+There are several in-built functions in R that can be used to perform analytical tasks, for example: `mean, min, max, quantile,summary`.
+Detail on `mean()` function below:
+
+```r
+mean(arg)
+```
+
+Using function mean with missing value
+```r
+v <- c(2,NA,4,NaN,6)
+mean(v,na.rm=TRUE)
+```
+
+
+## Using User-Define a function with 1 arg(ument)
 Syntax:
 
 ```r
@@ -35,7 +51,7 @@ squareroot <- function(a){
 }
 squareroot(49)
 ```
-## Define a function with 2 or more arg(uments)
+## Using User-Define a function with 2 or more arg(uments)
 Syntax:
 
 ```r
@@ -70,5 +86,25 @@ sqsum <- function(a){
   output <- list(sq=sq, sumsq=sumsq)
 }
 sqsum(49)
+```
+
+## Nested function
+In complex data science use cases, we may have to work on nested functions, which contain functions within a function.
+For example: Given dataset `mtcars`. Find the mean of fuel consumption `mpg` for cars that having 4 cylinders `cyl`
+
+```r
+data(mtcars)
+names(mtcars)
+
+# Step 1: find the cars that having 4 cylinders:
+ind1 <- mtcars$cyl==4
+# Step 2: find the fuel consumption of all the cars having 4 cylinders:
+ind2 <- mtcars$mpg[ind1]
+# Step 3: compute the mean
+mean(ind2)
+```
+All the 3 steps can be nested into one command line for experience user:
+```r
+mean(mtcars$mpg[mtcars$cyl==4])
 ```
 
