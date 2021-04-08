@@ -93,3 +93,4 @@ One important step in R is to define the working directory. It is particularly u
 > setwd('C:/R/') # for Windows
 > setwd('/user/home/R') # for Macs
 ```
+s
