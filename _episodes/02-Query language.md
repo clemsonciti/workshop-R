@@ -3,8 +3,8 @@ title: "Basic of R"
 teaching: 5
 exercises: 0
 questions:
-- "how to initialize a variable"
 - "how to do basic arithmetics"
+- "how to initialize a variable"
 - "how to get help"
 objectives:
 - "R built-in function"
@@ -55,3 +55,26 @@ From highest to lowest precedence:
 > 1==1
 ~~~
 {: .r}
+
+## Assign Variables
+- To assign variable in R, we can use both `<-` and `=` sign
+
+~~~
+> a <- 1
+> b = 2
+~~~
+{: .r}
+
+Note that assignment does not print out value to R console. It save the variable in Environment section:
+![image](https://user-images.githubusercontent.com/43855029/114053543-09479a00-985d-11eb-965a-88462449ea89.png)
+
+- To print the variable to console
+
+~~~
+> a
+> print(a)
+~~~
+{: .r}
+![Uploading image.png…]()
+
+
