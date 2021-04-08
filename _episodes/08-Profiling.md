@@ -58,7 +58,8 @@ profvis({
 ![image](https://user-images.githubusercontent.com/43855029/114084019-b500e200-987d-11eb-9014-7d7b671bf800.png)
 
 ### Alternatively user can select the chunk of code and Select Profile\Profile Selected Line(s)
-![image](https://user-images.githubusercontent.com/43855029/114085356-458bf200-987f-11eb-9275-a1cea7d8c528.png)
+![image](https://user-images.githubusercontent.com/43855029/114086815-1c6c6100-9881-11eb-8be8-1aa43aa27191.png)
+
 
 ### Using Rprof()
 ```r
