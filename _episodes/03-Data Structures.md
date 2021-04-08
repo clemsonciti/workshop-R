@@ -15,11 +15,33 @@ keypoints:
 - "Read csv input"
 ---
 
-## Input to R
-- In R console, the symbol `>` stands for `R prompt`.
-- The `#` is for comment insert.
-- To clean the existing environment, remove all memory in previous sessions:
+## Classes of objects
+In R, there are 5 main classes of objects:
+* characters a, b
+* numeric: 2.3
+* interger: 5 or 5L
+* complex: 2+3i #consists of real and imaginary number
+* logical: TRUE/FALSE
+
+Typical object is a vector, that can be defined using function `c()`
 
 ```r
-> rm(list=ls())
+> str <- c("a","b","c")
+> class(str)
+> a <- rnorm(5)
+> class(a)
+> b <- 4:7
+> class(b)
+> c <- 6i ^ (-3:3)
+> class(c)
+> d <- 1:10 < 5
+> class(d)
+```
+
+## List
+A vector that containts objects from different class is call a `list`
+
+```r
+list1 <- list(str,a,b,c,d)
+list1
 ```
