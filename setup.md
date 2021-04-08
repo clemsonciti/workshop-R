@@ -15,7 +15,15 @@ You can change the layout (theme) by going to: Tools\Global Option\Appearance. H
 The general layout of RStudio:
 ![image](https://user-images.githubusercontent.com/43855029/114042725-ad2c4800-9853-11eb-87c8-a49797e33a35.png)
 
-### To execute the line of code in `Script`
-- Move the cursor to the line of code (or select the whole chunk of code) and click on the `Run` button: ![image](https://user-images.githubusercontent.com/43855029/114042905-d8169c00-9853-11eb-9e65-1f51ca472bd4.png)
+### To execute the line (chunk) of code in `Script`
+Move the cursor to the line of code (or select the whole chunk of code) 
+- Click on the `Run` button: ![image](https://user-images.githubusercontent.com/43855029/114042905-d8169c00-9853-11eb-9e65-1f51ca472bd4.png)
+- Or: use `Ctrl+Enter`
 
+### To execute the whole `Script`
+Click on `Source` button: ![image](https://user-images.githubusercontent.com/43855029/114043237-1c09a100-9854-11eb-938c-1fc987ae0c96.png)
 
+### To install additional package from CRAN or files:
+- Click on `Tools\Install Packages`
+Or 
+- Type in the console: `install.packages("package_name")`
