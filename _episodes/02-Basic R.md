@@ -41,8 +41,8 @@ From highest to lowest precedence:
  * Other math functions: `sin, cos, log1(), log10(), exp`
 
 ```r
-> a <- (1+2)*3-4^5
-> b <- sin(1)+log10(20)*exp(2)
+a <- (1+2)*3-4^5
+b <- sin(1)+log10(20)*exp(2)
 ```
 
 ## Compare in R
@@ -52,15 +52,15 @@ From highest to lowest precedence:
 * `>`& `>=`: more than & more than or equal to
 
 ```r
-> 1==1
+1==1
 ```
 
 ## Assign Variables
 - To assign variable in R, we can use both `<-` and `=` sign
 
 ```r
-> a <- 1
-> b = 2
+a <- 1
+b = 2
 ```
 
 Note that assignment does not print out value to R console. It save the variable in Environment section:
@@ -69,8 +69,8 @@ Note that assignment does not print out value to R console. It save the variable
 - To print the variable to console
 
 ```r
-> a
-> print(a)
+a
+print(a)
 ```
 
 The output will be like this:
@@ -88,22 +88,19 @@ One important step in R is to define the working directory. It is particularly u
 
 ```r
 # print working directory
-> getwd()
+getwd()
 # set working directory
-> setwd('C:/R/') # for Windows
-> setwd('/user/home/R') # for Macs
+setwd('C:/R/') # for Windows
+setwd('/user/home/R') # for Macs
 ```
 ## Seeking Help
 In order to look for help files for function:
 * Put `?` in front of function name, for example `rnorm` 
 
 ```r
-> ?rnorm
-> help(rnorm)
+?rnorm
+help(rnorm)
 ```
 The help section will display:
 
 ![image](https://user-images.githubusercontent.com/43855029/114055446-c981b200-985e-11eb-8207-1347edd1f62f.png)
-
-
-
