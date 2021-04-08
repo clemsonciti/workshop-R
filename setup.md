@@ -25,5 +25,7 @@ Click on `Source` button: ![image](https://user-images.githubusercontent.com/438
 
 ### To install additional package from CRAN or files:
 - Click on `Tools\Install Packages`
-Or 
+![image](https://user-images.githubusercontent.com/43855029/114043981-c5509700-9854-11eb-94db-4d10466e3b2e.png)
+
+Or to install package in Command line (mostly for Linux environment, i.e. Palmetto)
 - Type in the console: `install.packages("package_name")`
