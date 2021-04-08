@@ -19,6 +19,7 @@ There are functions in R that make looping easier:
 - tapply: apply function over subsets of vector
 
 ## apply
+
 - Most often used to apply function to row or column of matrix
 - Not really faster than loop but simpler coding
 
@@ -31,7 +32,7 @@ apply(m,2,sum)
 ```
 
 Similar functions for matrix:
-``r
+```r
 rowSums(m)
 colSums(m)
 rowMeans(m)
@@ -42,7 +43,6 @@ colMeans(m)
 `l`: long
 `s`: short
 lapply & sapply applies the FUN to each element of a list
-
 ```r
 list1 <- list(l1 = seq(1,10),l2=20:29,l3=rnorm(4))
 lapply(list1,mean)
