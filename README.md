@@ -9,7 +9,7 @@ from [The Carpentries](https://carpentries.org/).
 
 ## Authors
 
-Tue M. Vu, Ph.D. 
+> Tue M. Vu, Ph.D. 
 HPC Research Facilitator,
 Advanced Computing and Data Science,
 CyberInfrastructure and Technology Integration (CCIT/CITI)
