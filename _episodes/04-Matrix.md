@@ -153,10 +153,23 @@ Similarly there are syntax for writing table:
 - `write.xlsx`: write table in excel format (require xlsx packages)
 - `writeLines`: write lines of a text file
 
-In this example, I perform reading [online spatial data](https://support.spatialkey.com/spatialkey-sample-csv-data/) and save part of the output:
+In this example, I perform reading [online sale data](https://support.spatialkey.com/spatialkey-sample-csv-data/) and save the output to current working directory:
 ```r
+# Read online csv data
 saledata <- read.csv('https://support.spatialkey.com/wp-content/uploads/2021/02/Sacramentorealestatetransactions.csv')
 dim(saledata)
 names(saledata)
+
+# Save output to csv file
 write.csv(saledata,'SaleData.csv')
+```
+
+Here is another example using R to read a poem online and write poem to working directory
+```r
+# Reading poem
+poem <- readLines("http://lib.ru/SHAKESPEARE/sonnets.txt")
+poem[10:20]
+
+# Writing poem
+writeLines(poem[10:20],"Sonet1.txt")
 ```
