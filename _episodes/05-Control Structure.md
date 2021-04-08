@@ -8,14 +8,14 @@ questions:
 - "How do I use While Loop structure"
 
 objectives:
-- "Write conditional statement with `if...else` and `ifelse()`"
+- "Write conditional statement with `if...else` and `elseif()`"
 - "Write and understand `for()` loop"
 keypoints:
 - "Use `if` and `else`"
 - "Use `for` loop "
 ---
 
-## If-Else
+## if-else
 Syntax:
 
 **if**
@@ -38,9 +38,47 @@ if (condition1){
 ```r
 if (condition1){
   #do task 1
-} elseif (condition2) {
+} else if (condition2) {
   #do task 2
 } else {
   #do the rest
 }
+```
+
+**ifelse()**
+```r
+ifelse(condition,action if true,action if false)
+```
+
+**Examples**
+
+```r
+a <- 5
+if (a>3){
+  print("a is bigger than 3")
+```
+
+```r
+a <- 5
+if (a>3){
+  print("a is bigger than 3")
+} else {
+  print("a is NOT bigger than 3")
+}
+```
+
+```r
+a <- 5
+if (a>3){
+  print("a is bigger than 3")
+} else if (a==3) {
+  print("a equals to 3")
+} else {
+  print("a is less than 3")
+}
+
+```r
+a <- 5
+ifelse(a>3,"a is bigger than 3","a is not bigger than 3")
+```
 ```
