@@ -67,3 +67,19 @@ i <- NA
 h
 i
 ```
+
+## Missing values
+In order to test the missing values or bad values NaN, NA, Inf use some math operations:
+* is.na() test NA value
+* is.nan() test NaN value
+* is.infinite() test Inf value
+* NaN is NA but the reverse is false
+```r
+v <- c(TRUE, 6, 1/0,NA, NaN,-6/0)
+v
+is.na(v)
+is.nan(v)
+is.infinite(v)
+```
+
+
