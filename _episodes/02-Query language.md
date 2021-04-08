@@ -19,8 +19,7 @@ keypoints:
 
 > ## Input to R
 > In R console, the symbol `>` stands for `promt`
-{: .slide}
-The `#` is for commenting.
-To clean the existing environment, remove all memory in previous sessions
+> The `#` is for commenting.
+> To clean the existing environment, remove all memory in previous sessions
 > {: .language-r}
-rm(list=ls())
+> rm(list=ls())
