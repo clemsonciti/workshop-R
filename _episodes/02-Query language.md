@@ -18,6 +18,9 @@ keypoints:
 > ## Input to R
 > In R console, the symbol `>` stands for `promt`
 {: .slide}
+The `#` is for commenting.
+> # To clean the existing environment, remove all memory in previous sessions
+> rm(list=ls())
 
 > ## This is second slide
 >
@@ -43,14 +46,5 @@ keypoints:
 > >  printf("Hello workd:");
 > >  return 0;
 > > }
-
-
-{% include links.md %}
-> {: .language-r}
->
-{: .slide}
-
-You do this and you do that
-{% include links.md %}
 
 
