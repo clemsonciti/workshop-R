@@ -99,7 +99,7 @@ str[1]
 str[2:4]
 ```
 
-** Subsetting with List**
+**Subsetting with List**
 ```r
 list1 <- list(l1=str,l2=4:6)
 list1
@@ -119,7 +119,7 @@ m[2,]
 m[,4]
 ```
 
-** Subsetting `NA/NaN` value
+**Subsetting `NA/NaN` value**
 ```r
 a <- c(1:5,NaN,TRUE)
 a
