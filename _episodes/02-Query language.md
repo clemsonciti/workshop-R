@@ -75,6 +75,14 @@ Note that assignment does not print out value to R console. It save the variable
 > print(a)
 ~~~
 {: .r}
-![Uploading image.png…]()
+
+The output will be like this:
+```r
+> a
+[1] 1
+> print(a)
+[1] 1
+```
+
 
 
