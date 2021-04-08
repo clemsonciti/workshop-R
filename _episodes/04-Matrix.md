@@ -158,6 +158,15 @@ head(iris)
 names(iris)[4] <- "new_name"
 ```
 
+## Getting data from Data Frames
+Using columns or `$` to get the name of Data Frames;
+```r
+data(mtcars)
+mpg1 <- mtcars$mpg
+mpg2 <- mtcars[,1]
+cylinder <- mtcars$cyl
+```
+
 ## Reading and Writing Tables
 
 **Reading Table**
