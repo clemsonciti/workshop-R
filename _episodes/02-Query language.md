@@ -83,6 +83,15 @@ The output will be like this:
 > print(a)
 [1] 1
 ```
+But not to worry about the `[1]` in front. We will be learning about that in the later part
 
+## Working directory
+One important step in R is to define the working directory. It is particularly useful when you are working with files in the working directory and working in Linux environment in Palmetto:
 
-
+```r
+# print working directory
+> getwd()
+# set working directory
+> setwd('C:/R/') # for Windows
+> setwd('/user/home/R') # for Macs
+```
