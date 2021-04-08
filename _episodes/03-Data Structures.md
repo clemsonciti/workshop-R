@@ -86,7 +86,7 @@ sample(12)
 sample(letters,4)
 ```
 
-* Introduction to `seed`
+### Introduction to `seed`
 Set the seed of R's random number generator, which is useful for creating simulations or random objects that can be reproduced.
 ```r
 set.seed(1234)
