@@ -132,7 +132,7 @@ Defensive programming encourages us to frequently check conditions and throw an 
 For example:
 ```r
 F2C <- function(temp){
-   stopifnot(!is.numeric(temp))
+   stopifnot(is.numeric(temp)==TRUE)
    c <- ((temp - 32) * (5 / 9))
    return(c)
 }
