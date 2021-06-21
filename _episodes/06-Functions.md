@@ -137,5 +137,6 @@ F2C <- function(temp){
    return(c)
 }
 F2C(100a)
+F2C(100)
 ```
 
