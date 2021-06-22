@@ -73,9 +73,9 @@ setDefaultCluster(cl)
 Apply `parLapply`
 ```r
 #Load necessary packages on the cluster workers
-clusterExport(NULL, c('max.eig'))
+clusterExport(cl, c('max.eig'))
 system.time(foreach(i=1:200, .combine='c') %do% max.eig(i,1))
-system.time(parLapply(NULL, 1:200, function(z) max.eig(z,1)))
+system.time(parLapply(cl, 1:200, function(z) max.eig(z,1)))
 stopCluster(cl)
 ```
 
