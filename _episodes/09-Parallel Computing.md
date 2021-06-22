@@ -66,8 +66,7 @@ Check number of available processing cpus:
 ```r
 library(parallel)
 co <- detectCores()-1
-cl <- makePSOCKcluster(co)
-setDefaultCluster(cl)
+cl <- makecluster(co)
 ``` 
 
 Apply `parLapply`
