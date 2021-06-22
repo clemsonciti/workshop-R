@@ -64,7 +64,7 @@ stopCluster(cl)
 (Note: this does not work in Windows, mostly applicable to run in Palmetto)
 Check number of available processing cpus:
 ```r
-library(Parallel)
+library(parallel)
 co <- detectCores()-1
 cl <- makePSOCKcluster(co)
 setDefaultCluster(cl)
