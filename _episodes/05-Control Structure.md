@@ -1,5 +1,5 @@
 ---
-title: "Control Structire"
+title: "Control Structure"
 teaching: 20
 exercises: 0
 questions:
