@@ -9,6 +9,9 @@ Users need to download the RStudio Desktop (Free version) here:
 
 ![image](https://user-images.githubusercontent.com/43855029/114041384-83beec80-9852-11eb-8d7d-b111fc072a43.png)
 
+In order to run RStudio, you will also need to install R from the same webpage.
+
+
 ### Once installed, open RStudio
 You can change the layout (theme) by going to: Tools\Global Option\Appearance. Here I use theme `Cobalt`
 
