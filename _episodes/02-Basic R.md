@@ -1,5 +1,5 @@
 ---
-title: "Basic of R"
+title: "Basics of R"
 teaching: 5
 exercises: 0
 questions:
@@ -7,7 +7,7 @@ questions:
 - "how to initialize a variable"
 - "how to get help"
 objectives:
-- "R built-in function"
+- "R built-in functions"
 keypoints:
 - "Use RStudio to write and run R programs."
 - "R has the usual arithmetic operators and mathematical functions."
