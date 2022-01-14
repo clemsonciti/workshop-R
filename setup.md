@@ -17,6 +17,7 @@ You can change the layout (theme) by going to: Tools\Global Option\Appearance. H
 
 The general layout of RStudio:
 ![image](https://user-images.githubusercontent.com/43855029/114042725-ad2c4800-9853-11eb-87c8-a49797e33a35.png)
+For this layout, you might have to do File -> New File -> R Script. This creates a script editor in the top left corner.
 
 ### To execute the line (chunk) of code in `Script`
 Move the cursor to the line of code (or select the whole chunk of code) 
