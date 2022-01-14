@@ -38,14 +38,14 @@ From highest to lowest precedence:
  * Divide: `/`
  * Add: `+`
  * Subtract: `-`
- * Other math functions: `sin, cos, log1(), log10(), exp`
+ * Other math functions: `sin, cos, log(), log10(), exp`
 
 ```r
 a <- (1+2)*3-4^5
 b <- sin(1)+log10(20)*exp(2)
 ```
 
-## Compare in R
+## Comparisons in R
 * `==`: equality
 * `!=`: inequality 
 * `<`& `<=`: less than & less than or equal to
@@ -63,7 +63,7 @@ a <- 1
 b = 2
 ```
 
-Note that assignment does not print out value to R console. It save the variable in Environment section:
+Note that assignment does not print out value to R console. It saves the variable in Environment section:
 ![image](https://user-images.githubusercontent.com/43855029/114053543-09479a00-985d-11eb-965a-88462449ea89.png)
 
 - To print the variable to console
@@ -81,7 +81,7 @@ The output will be like this:
 > print(a)
 [1] 1
 ```
-But not to worry about the `[1]` in front. We will be learning about that in the later part
+Do not to worry about the `[1]` in front. We will be learning about that later.
 
 ## Working directory
 One important step in R is to define the working directory. It is particularly useful when you are working with files in the working directory and working in Linux environment in Palmetto:
