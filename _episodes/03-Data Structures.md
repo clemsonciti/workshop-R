@@ -22,7 +22,7 @@ keypoints:
 In R, there are 5 main classes of objects:
 * characters a, b
 * numeric: 2.3
-* interger: 5 or 5L
+* integer: 5 or 5L
 * complex: 2+3i #consists of real and imaginary parts
 * logical: TRUE/FALSE
 
@@ -33,21 +33,13 @@ a <- 5
 class(a)
 b <- 4L
 class(b)
-c <- 6i ^ (-3:3)
+c <- 1+6i 
 class(c)
-d <- 1:10 < 5
+d <- b < 5
 class(d)
 ```
 
-## List
-A vector that containts objects from different class is call a `list`
-
-```r
-list1 <- list(str,a,b,c,d)
-list1
-```
-
-## Number
+## Numbers
 * In R, the number is considered as numeric
 ```r
 e <- 5
@@ -62,14 +54,18 @@ class(f)
 ```r
 g<-5/0
 class(g)
+5/0
+-5/0
+log(0)
 ```
-* `NaN` (Not a Number) or `NA` (Not Applicable) are undefined values and sometimes refered as missing values:
+* `NaN` (Not a Number) specifies an undefined value:
 ```r
 h <- 0/0
-i <- NA
 h
-i
+log(-1)
+asin(4)
 ```
+Sometimes, when you are dealing with data, you have missing values. In R, there is a special way to denote missing values: `NA` ("not available"). `NaN` is a special type of `NA`.
 
 ## Random Number & seed
 Create random numeric numbers using runif
@@ -79,22 +75,76 @@ runif(3)
 runif(2,10,20)
 ```
 
-Create random integer numbers using sample
-```r
-sample(12,5)
-sample(12)
-sample(letters,4)
-```
-
-### Introduction to `seed`
 Set the seed of R's random number generator, which is useful for creating simulations or random objects that can be reproduced.
 ```r
 set.seed(1234)
 runif(3)
 ```
 
+Create a sample of random numbers: 
+```r
+sample(12,5)
+sample(12)
+sample(letters,4)
+```
+`sample` returns a set of variables, rather than one variable. Sets of variables of the same type are called vectors.
+
+
+## Vectors
+Vectors are sets of variables of the same class, in a certain order. The simplest, and a very useful, type of a vector is a range of values, specified with a colon:
+
+```r
+x <- 1:5
+x <- -3:3
+```
+You can also define a vector by combining a bunch of values (`c` stands for "combine"):
+
+```r
+str <- c("a", "b", "c")
+a   <- c(4, 5.6, 20)
+b   <- c("TRUE", "FALSE")
+```
+
+If a vector is combined from variables of different types, R tries to "coerce" them into the same type. For example, logicals can be coerced into numbers (TRUE becomes 1, and FALSE becomes zero):
+
+```r
+c(TRUE, FALSE)
+c(TRUE, FALSE, 5)
+```
+
+Likewise, numbers can be coerced into characters:
+
+```r
+c (5, "a")
+```
+In this example, everything is ultimately coerced into characters:
+
+```r
+str1 <- c("a", "b", TRUE, 5, 4.5)
+str1
+class(str1)
+```
+
+## Explicit Coercion
+Convert objects from one class to another, using `as.` function:
+```r
+a <- 0:5
+class(a)
+as.numeric(a)
+as.logical(a)
+as.character(a)
+```
+How about Nonsensical Coercion?
+```r
+str <- c("a","b","c")
+class(str)
+as.numeric(str)
+as.logical(str)
+as.character(str)
+```
+
 ## Missing values
-In order to test the missing values or bad values NaN, NA, Inf use some math operations:
+In order to detect missing values or bad values (NaN, NA, Inf), we can use these functions:
 * is.na() test NA value
 * is.nan() test NaN value
 * is.infinite() test Inf value
@@ -106,6 +156,12 @@ is.na(v)
 is.nan(v)
 is.infinite(v)
 ```
+
+
+
+
+
+
 
 ## Subsetting
 
@@ -120,6 +176,20 @@ str[1]
 # Find the subset with index 2:4 for str:
 str[2:4]
 ```
+
+## Lists
+A set that containts objects from different classes is call a `list`
+
+```r
+str <- "Clemson"
+a <- 5
+b <- 4L
+c <- 6i ^ (-3:3)
+d <- 1:10 < 5
+list1 <- list(str,a,b,c,d)
+list1
+```
+
 
 **Subsetting with List**
 ```r
