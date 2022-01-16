@@ -105,7 +105,7 @@ a   <- c(4, 5.6, 20)
 b   <- c("TRUE", "FALSE")
 ```
 
-If a vector is combined from variables of different types, R tries to "coerce" them into the same type. For example, logicals can be coerced into numbers (TRUE becomes 1, and FALSE becomes zero):
+If a vector is combined from variables of different types, R tries to "coerce" them into the same type. For example, logicals can be coerced into numbers (TRUE becomes 1, and FALSE becomes 0):
 
 ```r
 c(TRUE, FALSE)
