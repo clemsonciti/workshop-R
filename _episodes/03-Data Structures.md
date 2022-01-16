@@ -97,6 +97,14 @@ Vectors are sets of variables of the same class, in a certain order. The simples
 x <- 1:5
 x <- -3:3
 ```
+
+The same could be accomplished with the `seq` function:
+
+```r
+seq (from=1, to=5)
+seq (from=1, to=5, by=2)
+```
+
 You can also define a vector by combining a bunch of values (`c` stands for "combine"):
 
 ```r
