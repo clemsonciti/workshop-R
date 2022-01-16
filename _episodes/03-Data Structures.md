@@ -23,7 +23,7 @@ In R, there are 5 main classes of objects:
 * characters a, b
 * numeric: 2.3
 * interger: 5 or 5L
-* complex: 2+3i #consists of real and imaginary number
+* complex: 2+3i #consists of real and imaginary parts
 * logical: TRUE/FALSE
 
 ```r
