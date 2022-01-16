@@ -16,44 +16,9 @@ keypoints:
 - "Working with csv input data"
 ---
 
-## Vector
-Typical object is a vector, that can be defined using function `c()` #c stands for combine
+## Vector math
 
-```r
-str <- c("a","b","c")
-a   <- c(4,5.6,20)
-b   <- c("TRUE","FALSE")
-```
-
-A vector having different objects: `coercion`
-```r
-str1 <- c("a","b","c",5, 4.5)
-str1
-class(str1)
-b1<- c(5, FALSE)
-b1
-class(b1)
-```
-
-## Explicit Coercion
-Convert objects from one class to another, using `as.` function:
-```r
-a <- 0:5
-class(a)
-as.numeric(a)
-as.logical(a)
-as.character(a)
-```
-How about Nonsensical Coercion?
-```r
-str <- c("a","b","c")
-class(str)
-as.numeric(str)
-as.logical(str)
-as.character(str)
-```
-
-## Vectors Operation
+R can do a lot of mathematical operations on vectors:
 
 ```r
 a <- 3:7
@@ -65,8 +30,27 @@ a*b
 a/b
 ```
 
+What if vector lenghts don't match?
+```r
+a<-1:5
+b<-1:6
+a
+b
+a+b
+```
+
 ## Matrices
-Matrics are vectors with dimension attribute. The dimension attribute is itself an integer vector of length 2 `(nrow, ncol)`
+Vectors are one-dimensional rows of numbers; matrices are two-dimensional tables. Like vectors, all elements of a matrix must be of the same data type. 
+
+Let's create a matrix of zeros:
+
+```r
+m <- matrix (0, nrow=3, ncol=4)
+m
+```
+When creating a matrix, you will need to specify number of rows and columns. 
+
+You can create a matrix from a vector:
 
 ```r
 m <- matrix(1:12,nrow=3,ncol=4)
@@ -74,36 +58,13 @@ m <- matrix(1:12,3,4)
 m
 dim(m)
 ```
-Another way to create matrices
+Another way to create a matricex from a vector:
 ```r
 m <- 1:12
 dim(m) <- c(3,4)
 ```
-Matrix Functions:
-```r
-# Define a matrix
-mr <- matrix(runif(9),3,3)
-#Transpose matrics
-t(mr)
-#Diagonal of matrics
-diag(mr)
-#Determinant
-det(mr)
-#Inverse
-solve(mr)
-```
 
-## Merging Matrices
-Merging matrices by row and column using `rbind` and `cbind`
-```r
-m2 <- letters[seq(from=1,to=12)]
-dim(m2) <- c(3,4)
-m2
-cbind(m,m2)
-rbind(m,m2)
-```
-
-## Matrices Operation
+## Basic Matrix Math
 ```r
 m1 <- matrix(1:9,nrow=3,ncol=3)
 m2 <- matrix(rep(10,9),3,3)
@@ -114,6 +75,32 @@ m1*m2
 m1 %*% m2
 ```
 
+Some additional matrix functions:
+```r
+# Define a matrix
+mr <- matrix(runif(9),3,3)
+#Transpose a matrix
+t(mr)
+#Diagonal elements of a matrix
+diag(mr)
+#Determinant
+det(mr)
+#Inverse
+solve(mr)
+solve(mr) %*% mr
+```
+
+## Merging Matrices
+Merging matrices by row and column using `rbind` and `cbind`:
+```r
+m 
+m2 <- -1:-12
+dim(m2) <- c(3,4)
+m2
+cbind(m,m2)
+rbind(m,m2)
+```
+<!---
 ## Factors
 Factors are used to represent categorical data
 ```r
@@ -121,6 +108,81 @@ m <- c("John","Mary","John","John","Jeff","Mary")
 factor(m)
 table(m)
 ```
+-->
+
+## Lists
+In matrices and vectors, all elements belong to the same class. A collection of variables from different classes is called a list.
+
+```r
+str <- "Clemson"
+a <- 5
+b <- 4L
+list1 <- list(str,a,b)
+list1
+```
+Lists are very flexible. A vector, or a matrix, can be an element of a list:
+
+```r
+c <- 6i ^ (-3:3)
+d <- 1:10 < 5
+list2 <- list(str,a,b,c,d)
+list2
+```
+
+
+## Subsetting
+
+In order to extract the necessary information, subsetting is used.
+In R, subsetting is represented by bracket: `[]`
+
+```r
+str <- c("a", "b","c","d")
+str
+# Find the subset with index 1 for str:
+str[1]
+# Find the subset with index 2:4 for str:
+str[2:4]
+```
+
+
+
+
+**Subsetting with List**
+```r
+list1 <- list(l1=str,l2=4:6)
+list1
+# Use $ to call a variable name
+list1$l1[3]
+```
+
+**Subsetting matrix**
+```r
+m <- matrix(1:12,nrow=3,ncol=4)
+m
+m[2,3]
+```
+Subsetting by row or column:
+```r
+m[2,]
+m[,4]
+```
+
+**Subsetting `NA/NaN` value**
+```r
+a <- c(1:5,NaN,TRUE)
+a
+# Find the location of *NaN* value using `is.nan()` function
+ind <- is.nan(a)
+ind
+# Subset with location of *NaN* value
+a[ind]
+a[is.nan(a)]
+# Subset with location of `Not NaN` values using `!`
+a[!ind]
+```
+
+
+
 
 ## Data Frames
 **Data frame is used to store tabular data, a table or 2-D array structure in which:**
