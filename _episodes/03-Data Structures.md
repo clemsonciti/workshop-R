@@ -39,8 +39,24 @@ d <- b < 5
 class(d)
 ```
 
+## Logical operations
+Logical operations "and" and "or" are computed with `&&` and `||`:
+```r
+a<-TRUE
+b<-FALSE
+a&&b
+a||b
+```
+Logical "not" is computed with !:
+```r
+!a
+!b
+a && !b
+```
+
+
 ## Numbers
-* In R, the number is considered as numeric
+* In R, a number is considered a numeric type:
 ```r
 e <- 5
 class(e)
