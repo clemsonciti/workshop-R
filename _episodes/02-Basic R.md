@@ -105,3 +105,5 @@ str(rnorm)
 The help section will display:
 
 ![image](https://user-images.githubusercontent.com/43855029/114055446-c981b200-985e-11eb-8207-1347edd1f62f.png)
+
+If you don't kow the exact function name, you can use `??` and R will try to find the appropriate function for you. For example, I want to know how to compute a correlation coefficient. I can do `??correlation`, and it will give me a list of functions that are, one way or another, related to correlation, and the first result on the list is the function `corr`, which is Pearson's correlation coefficient.
