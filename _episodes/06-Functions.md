@@ -16,25 +16,23 @@ objectives:
 - "Load function into program using `source()`"
 ---
 
-A function is a set of scripts organized together to carry out a specific task. Writing efficient functions is an important skill that can significantly improve the productivity of data scientists and data science solutions. In this guide, you will learn the basics of writing a function and the types of functions, which will enable you perform analytical tasks more efficiently.
+We have seen some examples of built-in R functions. For some functions, you would have to install particular packages. In this chapter, we will show you how to write your own functions. 
 
 ## Using custom functions
 
 There are several in-built functions in R that can be used to perform analytical tasks, for example: `mean, min, max, quantile,summary`.
-Detail on `mean()` function below:
-
-```r
-mean(arg)
-```
+For example, here's the `mean` function, which computes the arithmetic average of a vector: 
 
 Using function mean with missing value
 ```r
+mean (c (1, 3, 5, 3, 2))
 v <- c(2,NA,4,NaN,6)
+mean (v)
 mean(v,na.rm=TRUE)
 ```
 
 
-## Using User-Define a function with 1 arg(ument)
+## Writing a user-defined function with 1 argument
 Syntax:
 
 ```r
@@ -51,7 +49,7 @@ squareroot <- function(a){
 }
 squareroot(49)
 ```
-## Using User-Define a function with 2 or more arg(uments)
+## Writing a user-defined function with 2 or more arguments
 Syntax:
 
 ```r
@@ -68,7 +66,7 @@ Addtwo <- function(a,b){
 }
 Addtwo(1,2)
 ```
-## Return specific value from function
+## Specifying a variable for the result
 Syntax:
 ```r
 f <- function(args){
@@ -86,7 +84,7 @@ F2C <- function(temp){
 F2C(100)
 ```
 
-## Return list of (more) values from function
+## Returning several results in a list
 Syntax:
 ```r
 f <- function(args){
@@ -97,17 +95,30 @@ f <- function(args){
 }
 ```
 
-Example:
+Example: a function which converts polar coordinates to Cartesian coordinates
 ```r
-sqsum <- function(a){
-  sq <- a^0.5
-  sumsq <- a+sq  
-  output <- list(sq=sq, sumsq=sumsq)
+polar2cart <- function (r, phi) {
+x <- r*sin(phi)
+y <- r*cos(phi)
+return (list(x, y))
 }
-sqsum(49)
+polar2cart(1,pi/6)[1] 
+polar2cart(1,pi/6)[2] 
+```
+Let's specify the names of the two outputs:
+```r
+polar2cart <- function (r, phi) {
+x <- r*sin(phi)
+y <- r*cos(phi)
+return (list(x, y))
+}
+polar2cart(1,pi/6)[1] 
+polar2cart(1,pi/6)[2] 
+polar2cart(1,pi/6)$x
+polar2cart(1,pi/6)$y 
 ```
 
-## Nested function
+## Nested functions
 In complex data science use cases, we may have to work on nested functions, which contain functions within a function.
 For example: Given dataset `mtcars`. Find the mean of fuel consumption `mpg` for cars that having 4 cylinders `cyl`
 
@@ -116,11 +127,11 @@ data(mtcars)
 names(mtcars)
 
 # Step 1: find the cars that having 4 cylinders:
-ind1 <- mtcars$cyl==4
+ind <- mtcars$cyl==4
 # Step 2: find the fuel consumption of all the cars having 4 cylinders:
-ind2 <- mtcars$mpg[ind1]
+fuel_4cyl <- mtcars$mpg[ind]
 # Step 3: compute the mean
-mean(ind2)
+mean(fuel_4cyl)
 ```
 All the 3 steps can be nested into one command line for experience user:
 ```r
