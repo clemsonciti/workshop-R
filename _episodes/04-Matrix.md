@@ -264,7 +264,7 @@ names(saledata)
 write.csv(saledata,'SaleData.csv')
 ```
 
-Here, we read a poam from an online text file, and save ten lines in working directory:
+Here, we read a poam from an online text file, and save ten lines in the working directory:
 ```r
 poem <- readLines("http://lib.ru/SHAKESPEARE/sonnets.txt")
 poem[10:20]
