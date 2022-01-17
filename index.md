@@ -18,7 +18,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {: .prereq}
 
 > ## Prerequisites
-> This workshop requires basic programming, personal computer
+> This workshop requires a personal computer with online access. 
 {: .prereq}
 
 {% include links.md %}
