@@ -110,6 +110,58 @@ table(m)
 ```
 -->
 
+## Subsetting
+
+Subsetting is extracting elements from vectors / matrices / lists. In R, subsetting is denoted with square brackets: `[]`
+
+```r
+str <- c("a", "b","c","d")
+str
+# Find the subset with index 1 for str:
+str[1]
+# Find the subset with index 2:4 for str:
+str[2:4]
+```
+You can see that we can use a vector to subset another vector.
+
+Subsetting is very flexible. You can use a vector of logicals to subset another vector:
+
+```r
+a <- c (1, 2, 3, 4, 3, 2, 1)
+a
+a>2
+a[a>2]
+```
+
+You can use this method to filer out elements which are NaNs:
+
+```r
+a <- c(1:5,NaN,TRUE)
+a
+# Find the location of *NaN* value using `is.nan()` function
+ind <- is.nan(a)
+ind
+# Subset with location of *NaN* value
+a[ind]
+a[is.nan(a)]
+# Subset with location of `Not NaN` values using `!`
+a[!ind]
+```
+
+**Subsetting matrices**
+When subsettig a matrix, we use two indices (row and column):
+```r
+m <- matrix(1:12,nrow=3,ncol=4)
+m
+m[2,3]
+m[1,1:3]
+```
+Extracting a whole row or column: 
+```r
+m[2,]
+m[,4]
+```
+
 ## Lists
 In matrices and vectors, all elements belong to the same class. A collection of variables from different classes is called a list.
 
@@ -130,56 +182,15 @@ list2
 ```
 
 
-## Subsetting
-
-In order to extract the necessary information, subsetting is used.
-In R, subsetting is represented by bracket: `[]`
-
+**Subsetting lists**
 ```r
 str <- c("a", "b","c","d")
-str
-# Find the subset with index 1 for str:
-str[1]
-# Find the subset with index 2:4 for str:
-str[2:4]
-```
-
-
-
-
-**Subsetting with List**
-```r
 list1 <- list(l1=str,l2=4:6)
 list1
 # Use $ to call a variable name
 list1$l1[3]
 ```
 
-**Subsetting matrix**
-```r
-m <- matrix(1:12,nrow=3,ncol=4)
-m
-m[2,3]
-```
-Subsetting by row or column:
-```r
-m[2,]
-m[,4]
-```
-
-**Subsetting `NA/NaN` value**
-```r
-a <- c(1:5,NaN,TRUE)
-a
-# Find the location of *NaN* value using `is.nan()` function
-ind <- is.nan(a)
-ind
-# Subset with location of *NaN* value
-a[ind]
-a[is.nan(a)]
-# Subset with location of `Not NaN` values using `!`
-a[!ind]
-```
 
 
 
