@@ -58,7 +58,7 @@ m <- matrix(1:12,3,4)
 m
 dim(m)
 ```
-Another way to create a matricex from a vector:
+Another way to create a matrix from a vector:
 ```r
 m <- 1:12
 dim(m) <- c(3,4)
@@ -183,6 +183,7 @@ list2
 
 
 **Subsetting lists**
+Elements of a list can also be extracted by subsetting, using the dollar sign `$`:
 ```r
 str <- c("a", "b","c","d")
 list1 <- list(l1=str,l2=4:6)
@@ -191,32 +192,26 @@ list1
 list1$l1[3]
 ```
 
-
-
-
-
 ## Data Frames
-**Data frame is used to store tabular data, a table or 2-D array structure in which:**
-- Each column contains values of one variable and
-- Each row containts one set of value from each column
+Data frames are used to store tables, where columns correspond to a particular variable, and rows correpond to a particular observation. 
 
 **Data Frame characteristics:**
 - Column name should not be empty
 - Row name should be unique
-- Data can be numeric, integer, character, factor
+- Data can be numeric, integer, character
 - Each column contains same number of data items
 
 ```r
 df <- data.frame(data=sample(12),title=LETTERS[sample(12)])
 dim(df)
-head(df)
-names(df)
 nrow(df)
 ncol(df)
 ```
-There are many available data frame in R, for example [`iris`](https://archive.ics.uci.edu/ml/datasets/iris) data set:
+There are many readily available data frames in R, for example [`iris`](https://archive.ics.uci.edu/ml/datasets/iris) data set:
 ```r
 data(iris)
+dim (iris)
+head (iris)
 ```
 
 ## Names of Objects in Data Frames
@@ -232,9 +227,10 @@ names(iris)[4] <- "new_name"
 ```
 
 ## Getting data from Data Frames
-Using columns or `$` to get the name of Data Frames;
+Columns of a data frame could be extracted with `$` (as in a list) or with `[]` (as in a matrix).
 ```r
 data(mtcars)
+head (mtcars)
 mpg1 <- mtcars$mpg
 mpg2 <- mtcars[,1]
 cylinder <- mtcars$cyl
@@ -243,16 +239,14 @@ cylinder <- mtcars$cyl
 ## Reading and Writing Tables
 
 **Reading Table**
-Most popular syntax for reading table in R. Data can be read online by providing the link or read offline from the working directory
-
+Data frames can be created by reading from a file (a text file, or a CSV / Excel file). The file can be on a local computer, or online.
 - `read.table`: read table in text format
 - `read.csv`: read table in csv format
 - `read.xlsx`: read table in excel format (require xlsx packages)
 - `readLines`: read lines of a text file
-- `source`: read R code
 
 **Writing Table**
-Similarly there are syntax for writing table:
+In a similar fashion, a data frame can be saved as a text / CSV / Excel file:
 
 - `write.table`: write table in text format
 - `write.csv`: write table in csv format
@@ -270,12 +264,9 @@ names(saledata)
 write.csv(saledata,'SaleData.csv')
 ```
 
-Here is another example using R to read a poem online and write poem to working directory
+Here, we read a poam from an online text file, and save ten lines in working directory:
 ```r
-# Reading poem
 poem <- readLines("http://lib.ru/SHAKESPEARE/sonnets.txt")
 poem[10:20]
-
-# Writing poem
-writeLines(poem[10:20],"Sonet1.txt")
+writeLines(poem[10:20],"Sonnet1.txt")
 ```
