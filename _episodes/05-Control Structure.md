@@ -76,10 +76,13 @@ if (a>3){
 } else {
   print("a is less than 3")
 }
+```
 
 ```r
 a <- 5
-ifelse(a>3,"a is bigger than 3","a is not bigger than 3")
+response <- ifelse(a>3,"a is bigger than 3","a is not bigger than 3")
+response
+class(response)
 ```
 
 ## For Loop
@@ -99,7 +102,7 @@ for (i in 1:5){
 ```
 
 ```r
-for (i in seq(1,5)){
+for (i in seq(1,5,2)){
   print(i)
 }
 ```
@@ -117,7 +120,7 @@ for (i in seq(1,5)) print(letters[i])
 Syntax
 ```r
 while (this condition is true){
-  do a thing
+  do a task
 }
 ```
 
