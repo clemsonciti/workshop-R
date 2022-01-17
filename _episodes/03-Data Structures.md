@@ -119,6 +119,7 @@ The same could be accomplished with the `seq` function:
 ```r
 seq (from=1, to=5)
 seq (from=1, to=5, by=2)
+seq (1, 5, 2)
 ```
 
 You can also define a vector by combining a bunch of values (`c` stands for "combine"):
