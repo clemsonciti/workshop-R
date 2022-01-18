@@ -3,9 +3,9 @@ title: "Control Structure"
 teaching: 20
 exercises: 0
 questions:
-- "How do I use If Else structure?"
-- "How do I use For Loop structure"
-- "How do I use While Loop structure"
+- "How do I use If-Then-Else structure?"
+- "How do I use For loops?"
+- "How do I use While loops?"
 
 objectives:
 - "Write conditional statement with `if...else` and `elseif()`"
