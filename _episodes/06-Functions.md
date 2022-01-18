@@ -147,4 +147,25 @@ F2C <- function(temp){
 F2C(100a)
 F2C(100)
 ```
+## Saving functions for future use
+Let's save our function so we can use it later.
+
+First, get your working directory by running `getwd()`. Then, in a file browser (Windows) or in Finder (Mac), go to that directory, and please create a folder "R_workshop". Then, in R, let's make this our working directory: `setwd ("R_workshop")`. Then, let's list the files in it:
+
+```r
+list.files (getwd())
+```
+The result should be empty (`character(0)`) because it is an empty directory.
+
+Then, in the R studio Editor, copy-and-paste the polar2cart function:
+```r
+polar2cart <- function (r, phi) {
+x <- r*sin(phi)
+y <- r*cos(phi)
+return (list(x, y))
+}
+```
+...and then save it by doing File -> Save As. Make sure you are saving it in the R_workshop folder.
+
+
 
