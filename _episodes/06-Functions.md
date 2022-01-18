@@ -165,7 +165,7 @@ y <- r*cos(phi)
 return (list(x, y))
 }
 ```
-...and then save it by doing File -> Save As. Make sure you are saving it in the R_workshop folder.
+...and then save it by doing File -> Save As and selecting the name `polar2cart.R`. Make sure you are saving it in the `R_workshop` folder.
 
 
 
