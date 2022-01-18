@@ -3,19 +3,17 @@ title: "Data Structures"
 teaching: 20
 exercises: 0
 questions:
-- "Class of objects in R?"
-- "Data Type in R?"
-- "How many type of number in R?"
+- "Data types / classes in R"
+- "Random numbers"
+- "Vectors"
 - "Missing values"
-- "Subsetting"
+
 objectives:
-- "Identify 5 class of objects"
-- "Working with List"
-- "Type of number in R"
-- "Replace number with subset"
+- "5 data types / classes of objects"
+- "Working with vectors"
 keypoints:
-- "Class of objects"
-- "Subsetting" 
+- "Classes of objects"
+- "Vectors" 
 ---
 
 ## Classes of objects
