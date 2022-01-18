@@ -1,16 +1,16 @@
 ---
-title: "Matrices & Data Frame"
+title: "Vectors, Matrices, Lists and Data Frames"
 teaching: 20
 exercises: 0
 questions:
-- "Vector in R"
+- "Vectors in R"
 - "How to define matrix in R?"
 - "How to manipulate a data frame in R?"
 - "How to read text/csv file"
 objectives:
-- "Working with Matrix"
-- "Create data frame"
-- "Import and export data frame"
+- "Working with Matrices"
+- "Creating data frames"
+- "Importing and exporting data frames"
 - "Working with text/csv files"
 keypoints:
 - "Working with csv input data"
