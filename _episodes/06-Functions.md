@@ -3,16 +3,13 @@ title: "Function"
 teaching: 10
 exercises: 0
 questions:
-- "How to write function in R?"
-- "How can I use the function from packages"
+- "How to write functions in R"
 objectives:
-- "Define function"
-- "Learn to create `nested` function"
-- "Return value(s) from function"
-- "Check argument conditions with `stopifnot()` function"
+- "Define functions"
+- "Return value(s) from functions"
 -keypoints:
 - "Use `function` to define a new function in R"
-- "Use parameter to pass value to function"
+- "Use parameters to pass value to function"
 - "Load function into program using `source()`"
 ---
 
