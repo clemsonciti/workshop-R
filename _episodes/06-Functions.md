@@ -1,5 +1,5 @@
 ---
-title: "Function"
+title: "Functions"
 teaching: 10
 exercises: 0
 questions:
@@ -155,7 +155,7 @@ First, get your working directory by running `getwd()`. Then, in a file browser 
 ```r
 list.files (getwd())
 ```
-The result should be empty (`character(0)`) because it is an empty directory.
+The result should be empty (`character(0)`) because it is an empty directory. If you are familiar with Linux, you can use the "Terminal" tab from the console for the same purpose.
 
 Then, in the R studio Editor, copy-and-paste the polar2cart function:
 ```r
