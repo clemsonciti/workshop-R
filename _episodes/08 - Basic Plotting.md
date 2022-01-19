@@ -99,96 +99,18 @@ boxplot(mpg~cyl,data=mtcars,
 legend("topright",c("4","6","8"),fill = terrain.colors(3))
 ```
 
-And a scatter plot
+And a scatter plot. We'll use the `plot` function for this purpose. The dots will be coloured according to the number of cylinders.
 ```r
-plot(mtcars$mpg,mtcars$wt,main="Car Fuel vs Weight",
+plot(mtcars$mpg, mtcars$wt, main="Car Fuel vs Weight",
      xlab="Mileage per Gallon",ylab="Weight",
      col = mtcars$cyl,pch=16,cex=3)
 legend("topright",legend=c(8,6,4),pch=16,cex=3,
-       col=c("grey","magenta","blue"))
+       col=c(8,6,4))
 ```
 
-Here, `pch` is the plotting character; 16 corresponds to a circle. The full table of plotting characters is here:
+Here, `pch` is the plotting character; 16 corresponds to a circle, and `cex` is the size of the plotting characters. The full table of plotting characters is here:
 ![img](https://r-lang.com/wp-content/uploads/2021/02/plot-character-in-R.png)
 
-
-```
-pch: the plotting character (default is open circle)
-lty: the line type (default is solid line), can be dashed, dotted, etc.
-lwd: the line width, specified as an integer multiple
-col: the plotting color, specified as a number, string, or hex code; the colors() function gives you a vector of colors by name
-xlab: character string for the x-axis label
-ylab: character string for the y-axis label
-```
-### Important BASE plotting function
-```
-plot: make a scatterplot, or other type of plot depending on the class of the object being plotted
-lines: add lines to a plot, given a vector x values and a corresponding vector of y values (or a 2-column matrix); this function just connects the dots
-points: add points to a plot
-text: add text labels to a plot using specified x, y coordinates
-title: add annotations to x, y axis labels, title, subtitle, outer margin
-mtext: add arbitrary text to the margins (inner or outer) of the plot
-axis: adding axis ticks/labels
-```
-
-### Motor Trend Car Road Tests example
-The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973--74 models).
-- Usage:
-```r
-data(mtcars)
-dim(mtcars)
-names(mtcars)
-head(mtcars)
-print(mtcars)
-```
-* Simple Summaries of Data Simple Summaries of Data
-Five-number summary
-```r
-summary(mtcars)
-```
-* Boxplots:
-```r
-boxplot(mtcars$mpg,col="blue",main="Boxplot for mpg")
-```
-```r
-factor(mtcars$cyl)
-boxplot(mpg~cyl,data=mtcars,
-        col=terrain.colors(3),main="MPG by car cylinders",
-        xlab = "cylinders",ylab="mpg")
-legend("topright",c("4","6","8"),fill = terrain.colors(3))
-```
-![image](https://user-images.githubusercontent.com/43855029/114093764-82f57d00-9889-11eb-8e8a-bb7d11340f02.png)
-
-* Histograms
-```r
-hist(mtcars$hp, col="magenta")
-```
-![image](https://user-images.githubusercontent.com/43855029/114093825-94d72000-9889-11eb-953f-2b232708b37d.png)
-
-* Barplot
-```r
-barplot(mtcars$mpg,col="green",
-        main="MPG for 32 cars")
-```
-![image](https://user-images.githubusercontent.com/43855029/114093880-a7515980-9889-11eb-800e-0152f2e8c207.png)
-
-* Multiple historgrams
-```r
-par(mfrow=c(1,2))
-hist(mtcars$mpg,col="blue")
-hist(mtcars$wt,col="blue")
-```
-![image](https://user-images.githubusercontent.com/43855029/114093954-b932fc80-9889-11eb-8532-f3db53f6278f.png)
-
-* Scatter plot
-```r
-plot(mtcars$mpg,mtcars$wt,main="Car Fuel vs Weight",
-     xlab="Milage per Gallon",ylab="Weight",
-     col = mtcars$cyl,pch=16,cex=3)
-legend("topright",legend=c(8,6,4),pch=16,cex=3,
-       col=c("grey","magenta","blue"))
-```
-![image](https://user-images.githubusercontent.com/43855029/114094073-dff13300-9889-11eb-9f97-6675f7408d04.png)
 
 
 ## Graphics Devices
