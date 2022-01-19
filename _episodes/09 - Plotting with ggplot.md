@@ -65,7 +65,7 @@ qplot(Sepal.Length, Petal.Length, data=iris,
 ![image](https://user-images.githubusercontent.com/43855029/114095674-b507de80-988b-11eb-8a9f-852ed19ed08a.png)
 
 Let's make these lines straight -- that is, let's fit a linear model to each species' data:
-``r
+```r
 qplot(Sepal.Length, Petal.Length, data=iris,
       color=factor(Species),
       shape=factor(Species),
