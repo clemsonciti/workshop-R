@@ -47,6 +47,12 @@ There are 3 main plotting systems in R:
 - Many default mode
 - Flexible between Base and Lattice
 ```
+Tue's old screenshots:
+![image](https://user-images.githubusercontent.com/43855029/114093880-a7515980-9889-11eb-800e-0152f2e8c207.png)
+![image](https://user-images.githubusercontent.com/43855029/114093825-94d72000-9889-11eb-953f-2b232708b37d.png)
+![image](https://user-images.githubusercontent.com/43855029/114093954-b932fc80-9889-11eb-8532-f3db53f6278f.png)
+![image](https://user-images.githubusercontent.com/43855029/114093764-82f57d00-9889-11eb-8e8a-bb7d11340f02.png)
+![image](https://user-images.githubusercontent.com/43855029/114094073-dff13300-9889-11eb-9f97-6675f7408d04.png)
 -->
 
 R is a data analysis language, so naturally it comes with many built-in functions for plotting. Let's look at some of them, in application to the `mtcars` datast.
@@ -63,14 +69,11 @@ First, let's make a bar plot of the miles-per-gallon values of the 32 cars. `col
 ```r
 barplot(mtcars$mpg, col="green")
 ```
-![image](https://user-images.githubusercontent.com/43855029/114093880-a7515980-9889-11eb-800e-0152f2e8c207.png)
 
 Now, let's make a histogram for horsepower values.
 ```r
 hist(mtcars$hp, col="magenta")
 ```
-![image](https://user-images.githubusercontent.com/43855029/114093825-94d72000-9889-11eb-953f-2b232708b37d.png)
-
 Let's display two jistorgrams on the same plot. We'll use the function `par` to specify that the two histograms will be plotted stacked to each other, one on the left and one on the right. 
 
 ```r
@@ -78,7 +81,6 @@ par(mfrow=c(1,2))
 hist(mtcars$mpg,col="blue")
 hist(mtcars$wt,col="blue")
 ```
-![image](https://user-images.githubusercontent.com/43855029/114093954-b932fc80-9889-11eb-8532-f3db53f6278f.png)
 
 Let's create a box plot for miles-per-gallon data. We'll have to reset the plot options to let R know we don't use multiple plots anymore; this is done with `dev.off()`.
 
@@ -96,7 +98,6 @@ boxplot(mpg~cyl,data=mtcars,
         xlab = "cylinders",ylab="mpg")
 legend("topright",c("4","6","8"),fill = terrain.colors(3))
 ```
-![image](https://user-images.githubusercontent.com/43855029/114093764-82f57d00-9889-11eb-8e8a-bb7d11340f02.png)
 
 And a scatter plot
 ```r
@@ -106,11 +107,13 @@ plot(mtcars$mpg,mtcars$wt,main="Car Fuel vs Weight",
 legend("topright",legend=c(8,6,4),pch=16,cex=3,
        col=c("grey","magenta","blue"))
 ```
-![image](https://user-images.githubusercontent.com/43855029/114094073-dff13300-9889-11eb-9f97-6675f7408d04.png)
+
+Here, `pch` is the plotting character; 16 corresponds to a circle. The full table of plotting characters is here:
+![img](https://r-lang.com/wp-content/uploads/2021/02/plot-character-in-R.png)
 
 
 ```
-pch: the plotting symbol (default is open circle)
+pch: the plotting character (default is open circle)
 lty: the line type (default is solid line), can be dashed, dotted, etc.
 lwd: the line width, specified as an integer multiple
 col: the plotting color, specified as a number, string, or hex code; the colors() function gives you a vector of colors by name
