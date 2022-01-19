@@ -111,8 +111,13 @@ legend("topright",legend=c(8,6,4),pch=16,cex=3,
 Here, `pch` is the plotting character; 16 corresponds to a circle, and `cex` is the size of the plotting characters. The full table of plotting characters is here:
 ![img](https://r-lang.com/wp-content/uploads/2021/02/plot-character-in-R.png)
 
-
-
+What if we want to save a plot? Let's save it as a PDF. Here's how we do it:
+```r
+pdf("myplot.pdf")
+boxplot(mtcars$mpg,col="blue",main="Boxplot for mpg")
+dev.off()
+```
+<!---
 ## Graphics Devices
 A graphics device is something where you can make a plot appear When you make a plot in R, it has to be "sent" to a specific graphics device.
 
@@ -131,4 +136,4 @@ The most common place for a plot to be "sent" is the screen device
 dev.copy(png,"filename.png") # to save the image to file
 dev.off() # to close all the graphical devices
 ```
-
+-->
