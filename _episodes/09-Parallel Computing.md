@@ -12,10 +12,12 @@ keypoints:
 - "foreach()"
 ---
 
+<!--
 - The `doParallel` package is a "parallel backend" for the foreach package. It provides a mechanism needed to execute foreach loops in parallel.
 - The `foreach` package must be used in order to execute code in parallel.
 - The user must register a parallel backend to use, otherwise foreach will execute tasks sequentially, even when the %dopar% operator is used
 - User must register a parallel backend to use. To register doParallel to be used with foreach, you must call the registerDoParallel function.
+-->
 
 We can speed up computation by using *parallel computing*, that is, by running computational processes simultaneously on different cores of our computer. Most modern computers (laptops or desktops) are multi-cire, that is, they have more than one processor (CPU), so they can run more than one thing at a time. Taking advantage of this is the main idea behind parallel computing. Later in this workshop, we will try the same idea on the Palmetto cluster.
 
@@ -30,7 +32,6 @@ Make sure you include the parentheses around the package names. These two packag
 ```r
 library (foreach)
 library (doParallel)
-
 ```
 Note that, this time, there are no quotation marks around the package names.
 
