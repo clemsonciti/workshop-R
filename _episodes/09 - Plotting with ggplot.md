@@ -11,15 +11,13 @@ keypoints:
 - "ggplot2"
 ---
 
-## What is ggplot
-- Grammar of Graphics by Leland Wilkinson
-- Written by Hadley Wickham - a grad student at Iowa State
-- Third graphic system in for R (along with Base and Lattice)
-```r
-> install.packages("ggplot2")
-> library(ggplot2)
-```
+`ggplot2` is a graphics package, written by Hadley Wickham, a grad student at Iowa State, based on the ideas from the book "Grammar of Graphics" by Leland Wilkinson. Let's install it (it will install multiple additional packages that it requires):
 
+```r
+install.packages("ggplot2")
+library(ggplot2)
+```
+<!---
 ## Basic component of ggplot
 - A data frame
 - aes: aesthetic mappings showing how data are mapped to color, size
@@ -41,41 +39,51 @@ keypoints:
 ```
 - Flexible with many built-in function
 ```
+-->
 
-## Basic qplot: Scatter plot
-- Plots are made of aes (size, shape, color) and geom (points, lines)
-- Look for data in frame (or from parent directory)
+A quick way to get familiar with `ggplot2` is the `qplot` function, which stands for "quick plot". Let's do a quick scatter plot from the `iris` dataset, plotting sepal length versus petal length:
+
 ```r
-qplot(Sepal.Length, Sepal.Width, data=iris)
+qplot(Sepal.Length, Petal.Length, data=iris)
 ```
-- Add aesthetic (shape, color)
+Notice that it already looks nicer than the basic R plots we did in the last chapter. Now, let's plot different species of iris with different colours and shapes:
+
 ```r
 qplot(Sepal.Length, Petal.Length, data=iris,
       color=factor(Species),
-      shape=factor(Species)) #aesthetic
+      shape=factor(Species))
 ```
 ![image](https://user-images.githubusercontent.com/43855029/114095545-8ab62100-988b-11eb-8383-38d4a0802423.png)
-- Add geom (points, lines)
+
+Now, let's add smooth lines which show trends in the data:
 ```r
 qplot(Sepal.Length, Petal.Length, data=iris,
-      geom=c("point","smooth")) #geometry
+      color=factor(Species),
+      shape=factor(Species),
+      geom=c("point","smooth"))
 ```
 ![image](https://user-images.githubusercontent.com/43855029/114095674-b507de80-988b-11eb-8a9f-852ed19ed08a.png)
 
-- Linear Fitting
-```r
-qplot(Sepal.Length, Petal.Length, data=iris, color=Species,
-      geom=c("point","smooth"),method="lm")
+Let's make these lines straight -- that is, let's fit a linear model to each species' data:
+``r
+qplot(Sepal.Length, Petal.Length, data=iris,
+      color=factor(Species),
+      shape=factor(Species),
+      geom=c("point","smooth"), method="lm")
 ```
 ![image](https://user-images.githubusercontent.com/43855029/114095642-aae5e000-988b-11eb-925b-91336205073d.png)
 
-## Basic qplot: Histogram
+Let's make a density plot (a smoothed histogram) of sepal lengths of each species:
+
 ```r
-qplot(Sepal.Length,fill=Species, data=iris)
-qplot(Sepal.Length,data=iris,geom="density")
 qplot(Sepal.Length,data=iris,geom="density",
       color=Species)
 ```
+
+There are many more ways to use ggplot2. Some useful (and beautiful) examples of code are here:
+http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
+
+<!---
 ![image](https://user-images.githubusercontent.com/43855029/114096068-3c555200-988c-11eb-849a-1332fcf7c8f5.png)
 
 ## Basic qplot: Facets
@@ -290,4 +298,5 @@ Gcover <- raster("GLOBCOVER_L4_200901_200912_V2.3.tif")
 #plot raster
 plot(Gcover,main="GLobal Land cover")
 ```
-![image](https://user-images.githubusercontent.com/43855029/114116438-b7316380-98b2-11eb-91d0-0ca5a7b2c3d0.png)
+![image](https://user-images.githubusercontent.com/43855029/114116438-b7316380-98b2-11eb-91d0-0ca5a7b2c3d0.png) 
+-->
