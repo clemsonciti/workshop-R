@@ -5,10 +5,9 @@ exercises: 0
 questions:
 - "How to utilize multiple cores for R programming"
 objectives:
-- "Learn doParalel package"
-- "Learn Parallel package"
+- "Installing packages"
+- "Utilizing multiple cores"
 keypoints:
-- "doParallel()"
 - "foreach()"
 ---
 
