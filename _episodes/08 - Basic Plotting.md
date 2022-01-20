@@ -5,10 +5,10 @@ exercises: 0
 questions:
 - "How to plot in R"
 objectives:
-- "Learn using plotting tool in R"
-- "Learn to export graphical to file"
+- "Learn basic plotting tools in R"
+- "Learn to export graphics to a file"
 keypoints:
-- "Plot"
+- "plot"
 ---
 
 <!---
