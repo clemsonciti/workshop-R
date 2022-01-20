@@ -5,8 +5,7 @@ exercises: 0
 questions:
 - "How to plot in R using ggplot2 package"
 objectives:
-- "Learn professional plotting tool in R using ggplot2"
-- "Learn multiple way to use ggplot2"
+- "Learn advanced plotting using ggplot2"
 keypoints:
 - "ggplot2"
 ---
