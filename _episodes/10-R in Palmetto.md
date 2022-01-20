@@ -3,13 +3,12 @@ title: "R in Palmetto"
 teaching: 10
 exercises: 0
 questions:
-- "How to R in Palmetto"
+- "How to run R scripts in Palmetto"
 objectives:
 - "Learn how to run R in Palmetto"
-- "Learn how to install package in R in Palmetto"
+- "Learn how to install R packages in Palmetto"
 keypoints:
 - "Rscript"
-- "R CMD BATCH"
 ---
 
 If you need to process a large amount of data and you think your laptop / desktop is not fast enough, you can utilize the power of the Palmetto supercomputing cluster. If you have an account on Palmetto, you can log in as described in [our manual](https://www.palmetto.clemson.edu/palmetto/basic/login/).
