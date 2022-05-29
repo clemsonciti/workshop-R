@@ -44,5 +44,5 @@ This means your request is being processed. Once the compute node is ready, you 
 
 Click on it, and it will start RStudio. The final screen will be something like
 
-<img src="../fig/rstudio_gui.png" style="width:500px">
+<img src="../fig/rstudio_gui.png" style="width:600px">
 
