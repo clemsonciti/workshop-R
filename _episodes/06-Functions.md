@@ -105,9 +105,9 @@ polar2cart(1,pi/6)[2]
 Let's specify the names of the two outputs:
 ```r
 polar2cart <- function (r, phi) {
-x <- r*sin(phi)
-y <- r*cos(phi)
-return (list(x, y))
+xcoord <- r*sin(phi)
+ycoord <- r*cos(phi)
+return (list(x=xcoord, y=ycoord))
 }
 polar2cart(1,pi/6)[1] 
 polar2cart(1,pi/6)[2] 
