@@ -21,7 +21,7 @@ keypoints:
 Users of the Palmetto cluster can run R on Palmetto. The most user-friendly way to do this is to run R Studio through a web interface (Open OnDemand). Let's start it. In your web browser (Chrome, Firefox, Edge, Safari, Opera etc.), please go to
 
 ```
-https://openod02.palmetto.clemson.edu
+https://openod.palmetto.clemson.edu
 ```
 
 You will need to login with your Clemson username and password, and perform a DUO check. 
@@ -34,7 +34,7 @@ You can use OpenOD to run certain graphical applications applications like Jupyt
 Please fill out the request as shown on this picture:
 <img src="../fig/rstudio2.png" style="height:500px">
 
-This is basically a graphical interface to `qsub`. You are asking for 1 compute node, 5 CPUs, 10 GB of memory, no GPU, 1g interconnect (that is, a c1 node), for the walltime duration of 6 hours. Once you are done entering this information, please click the blue "Launch" button at the bottom. It will bring out a new screen:
+This is basically a graphical interface to `qsub`. You are asking for 1 compute node, 5 CPUs, 40 GB of memory, no GPU, 1g interconnect (that is, a c1 node), for the walltime duration of 6 hours. Once you are done entering this information, please click the blue "Launch" button at the bottom. It will bring out a new screen:
 
 <img src="../fig/rstudio3.png">
 
