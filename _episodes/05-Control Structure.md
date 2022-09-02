@@ -56,6 +56,7 @@ ifelse(condition,action if true,action if false)
 a <- 5
 if (a>3){
   print("a is bigger than 3")
+}  
 ```
 
 ```r
