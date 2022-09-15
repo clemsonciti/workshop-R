@@ -20,7 +20,8 @@ We have seen some examples of built-in R functions. For some functions, you woul
 There are several in-built functions in R that can be used to perform analytical tasks, for example: `mean, min, max, quantile,summary`.
 For example, here's the `mean` function, which computes the arithmetic average of a vector: 
 
-Using function mean with missing value
+Here's an example of using the `mean` function. Like many other R functions, there is an option to ignore missing values when computing the mean: 
+
 ```r
 mean (c (1, 3, 5, 3, 2))
 v <- c(2,NA,4,NaN,6)
@@ -160,9 +161,9 @@ The result should be empty (`character(0)`) because it is an empty directory. If
 Then, in the R studio Editor, copy-and-paste the polar2cart function:
 ```r
 polar2cart <- function (r, phi) {
-x <- r*sin(phi)
-y <- r*cos(phi)
-return (list(x, y))
+xcoord <- r*sin(phi)
+ycoord <- r*cos(phi)
+return (list(x=xcoord, y=ycoord))
 }
 ```
 ...and then save it by doing File -> Save As and selecting the name `polar2cart.R`. Make sure you are saving it in the `R_workshop` folder.
