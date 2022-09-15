@@ -10,7 +10,7 @@ keypoints:
 - "ggplot2"
 ---
 
-`ggplot2` is a graphics package, written by Hadley Wickham, a grad student at Iowa State, based on the ideas from the book "Grammar of Graphics" by Leland Wilkinson. Let's install it (it will install multiple additional packages that it requires):
+`ggplot2` is a graphics package, written by Hadley Wickham, a grad student at Iowa State, based on the ideas from the book "Grammar of Graphics" by Leland Wilkinson. Let's install it (it will install multiple additional packages that it requires). This installation might take ~10-15 minutes.
 
 ```r
 install.packages("ggplot2")
