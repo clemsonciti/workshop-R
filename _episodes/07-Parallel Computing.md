@@ -54,7 +54,7 @@ Now, let's run it in a loop to create ten random matrices, of size 500x500 each,
 
 ```r
 m = rep (0, 10)
-for (i in 1:10) { m[i] <- max.eig (100) }
+for (i in 1:10) { m[i] <- max.eig (500) }
 m
 ```
 This should take several seconds, depending on the processing power of your computer. An alternative way to run it is to use `foreach`:
